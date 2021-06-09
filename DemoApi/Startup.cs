@@ -27,7 +27,7 @@ namespace DemoApi
         {
             services.AddSingleton<GoodProvider>();
             services.AddSingleton<BadProvider>();
-            services.AddSingleton<IProvider, ProviderFactory>();
+            services.AddSingleton<IProvider, ProviderAdapter>();
             services.AddControllers();
         }
 

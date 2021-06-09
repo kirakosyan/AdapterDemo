@@ -1,10 +1,10 @@
 ﻿namespace DemoApi.Providers
 {
-    public class ProviderFactory : IProvider
+    public class ProviderAdapter : IProvider
     {
         IProvider _g;
         IProvider _b;
-        public ProviderFactory(GoodProvider g, BadProvider b)
+        public ProviderAdapter(GoodProvider g, BadProvider b)
         {
             _g = g;
             _b = b;
