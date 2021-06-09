@@ -17,7 +17,7 @@ namespace DemoApi.Controllers
         {
             if(string.IsNullOrWhiteSpace(providerId))
             {
-                return Ok("Error, please provideId in query string starting with 1 or 2");
+                return Ok("Error, please add providerId in query string starting with 1 or 2");
             }
 
             return Ok(provider.Forecast(providerId));
